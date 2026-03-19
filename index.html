@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anidro Paul – Developer, Researcher & Innovator. Explore my portfolio, projects, research, and achievements." />
+  <meta name="keywords" content="Anidro Paul, portfolio, developer, researcher, projects, skills" />
+  <meta name="author" content="Anidro Paul" />
+  <meta property="og:title" content="Anidro Paul | Portfolio" />
+  <meta property="og:description" content="Developer, Researcher & Innovator" />
+  <meta property="og:type" content="website" />
+  <title>Anidro Paul | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════ LOADER ════ -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-name">AP</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ════ CURSOR ════ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ════ SCROLL TO TOP ════ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ════ NAVBAR ════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Anidro Paul<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#workshops" class="nav-link">Workshops</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════ HERO ════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="heroCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap reveal-up" style="--delay:0.1s">
+        <div class="hero-photo-ring"></div>
+        <img src="./Image/my img 2.jpeg" alt="Anidro Paul" class="hero-photo" loading="lazy"
+          onerror="this.src='https://placehold.co/220x220/0a0a0f/7c6fcd?text=AP&font=syne'" />
+      </div> 
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up" style="--delay:0.2s">Hello, I'm</p>
+        <h1 class="hero-name reveal-up" style="--delay:0.3s">Anidro Paul</h1>
+        <div class="hero-role reveal-up" style="--delay:0.4s">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-tagline reveal-up" style="--delay:0.5s">
+          Building digital experiences that matter — through code, creativity, and curiosity.
+        </p>
+        <div class="hero-socials reveal-up" style="--delay:0.6s">
+          <a href="mailto:anidropaul4@gmail.com" class="social-icon" aria-label="Gmail"><i class="fa-brands fa-google"></i></a>
+          <a href="https://linkedin.com/in/anidropaul" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/anidrobot" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/AnidroPaul24789" target="_blank" rel="noopener" class="social-icon" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/ani_dro04?igsh=aXExbnQwNGt0MnRk" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="hero-cta reveal-up" style="--delay:0.7s">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-img-wrapper">
+            <img src="./Image/my jpg 3.jpeg" alt="Anidro Paul about" loading="lazy"
+              onerror="this.src='https://placehold.co/420x500/0f0f1a/7c6fcd?text=Anidro+Paul&font=syne'" />
+            <div class="img-deco"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card glass"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-card glass"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+            <div class="stat-card glass"><span class="stat-num">3+</span><span class="stat-label">Research Papers</span></div>
+          </div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <h3 class="about-sub">Developer · Researcher · Innovator</h3>
+          <p class="about-bio">
+            I'm <strong>Anidro Paul</strong>, a passionate developer and researcher dedicated to building
+            innovative solutions that push the boundaries of technology. I specialize in creating
+            full-stack web applications, conducting applied research, and leading technology-driven initiatives.
+          </p>
+          <p class="about-bio">
+            My journey is fueled by curiosity — from competing in national competitions to attending
+            cutting-edge workshops, I constantly seek opportunities to grow and contribute to the tech community.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Education</span><span class="info-val">Computer Science &amp; Engineering</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span><span class="info-val">Bangladesh</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-briefcase"></i> Status</span><span class="info-val">Open to Opportunities</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-language"></i> Languages</span><span class="info-val">Bengali, English</span></div>
+          </div>
+          <div class="about-interests">
+            <h4>Core Interests</h4>
+            <div class="interest-bars">
+              <div class="interest-bar"><span>Full-Stack Development</span><div class="bar-track"><div class="bar-fill" data-width="90"></div></div><span class="bar-pct">90%</span></div>
+              <div class="interest-bar"><span>Machine Learning / AI</span><div class="bar-track"><div class="bar-fill" data-width="75"></div></div><span class="bar-pct">75%</span></div>
+              <div class="interest-bar"><span>Research &amp; Innovation</span><div class="bar-track"><div class="bar-fill" data-width="85"></div></div><span class="bar-pct">85%</span></div>
+              <div class="interest-bar"><span>UI/UX Design</span><div class="bar-track"><div class="bar-fill" data-width="70"></div></div><span class="bar-pct">70%</span></div>
+            </div>
+          </div>
+          <a href="assets/resume.pdf" download class="btn btn-primary mt-1">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ACHIEVEMENTS ════ -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements &amp; <span class="accent">Certificates</span></h2>
+      </div>
+      <div class="cards-grid" id="achievementsGrid">
+
+        <div class="cert-card glass reveal-up" style="--delay:0.1s" data-img="assets/certificates/achievement1.jpg" data-title="National Programming Contest" data-desc="Secured top position in the National Programming Contest 2023, competing against 500+ participants from across the country." data-year="2023">
+          <div class="cert-card-img">
+            <img src="assets/certificates/achievement1.jpg" alt="Achievement 1" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/7c6fcd?text=Certificate&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">🏆 1st Place</span>
+            <h3>National Programming Contest</h3>
+            <p>Secured top position competing against 500+ participants from across the country.</p>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.2s" data-img="assets/certificates/achievement2.jpg" data-title="Hackathon Champion" data-desc="Won the 48-hour National Hackathon by developing an AI-powered health monitoring system." data-year="2023">
+          <div class="cert-card-img">
+            <img src="assets/certificates/achievement2.jpg" alt="Achievement 2" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/a78bfa?text=Hackathon&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">🥇 Champion</span>
+            <h3>Hackathon Champion</h3>
+            <p>Won the 48-hour National Hackathon by developing an AI-powered health monitoring system.</p>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.3s" data-img="assets/certificates/achievement3.jpg" data-title="Research Excellence Award" data-desc="Recognized for outstanding research contribution in the field of Machine Learning applied to healthcare." data-year="2024">
+          <div class="cert-card-img">
+            <img src="assets/certificates/achievement3.jpg" alt="Achievement 3" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/34d399?text=Research+Award&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">🎖️ Excellence</span>
+            <h3>Research Excellence Award</h3>
+            <p>Outstanding research contribution in Machine Learning applied to healthcare.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.4s" data-img="assets/certificates/achievement4.jpg" data-title="Best Student Project" data-desc="University-wide recognition for the best final year project — a smart campus management system." data-year="2024">
+          <div class="cert-card-img">
+            <img src="assets/certificates/achievement4.jpg" alt="Achievement 4" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/f59e0b?text=Best+Project&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">⭐ Best Project</span>
+            <h3>Best Student Project</h3>
+            <p>University-wide recognition for a smart campus management system.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ WORKSHOPS ════ -->
+  <section id="workshops" class="section workshops-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Learning &amp; Growth</span>
+        <h2 class="section-title">Workshops <span class="accent">Attended</span></h2>
+      </div>
+      <div class="cards-grid">
+
+        <div class="cert-card glass reveal-up" style="--delay:0.1s" data-img="assets/certificates/workshop1.jpg" data-title="Advanced Machine Learning Workshop" data-desc="Intensive 3-day workshop on advanced ML techniques including transformers, reinforcement learning and model optimization. Organized by IEEE Bangladesh." data-year="2023">
+          <div class="cert-card-img">
+            <img src="assets/certificates/workshop1.jpg" alt="Workshop 1" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/7c6fcd?text=ML+Workshop&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">🤖 ML / AI</span>
+            <h3>Advanced Machine Learning</h3>
+            <p>IEEE Bangladesh – Intensive 3-day workshop on transformers, RL and model optimization.</p>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.2s" data-img="assets/certificates/workshop2.jpg" data-title="Cloud Architecture Bootcamp" data-desc="AWS-certified cloud architecture bootcamp covering serverless, microservices and DevOps pipelines." data-year="2023">
+          <div class="cert-card-img">
+            <img src="assets/certificates/workshop2.jpg" alt="Workshop 2" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/38bdf8?text=Cloud+Bootcamp&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">☁️ Cloud</span>
+            <h3>Cloud Architecture Bootcamp</h3>
+            <p>AWS-certified bootcamp on serverless, microservices and DevOps pipelines.</p>
+            <span class="cert-year">2023</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.3s" data-img="assets/certificates/workshop3.jpg" data-title="Cybersecurity Workshop" data-desc="Hands-on cybersecurity training covering ethical hacking, penetration testing and secure coding practices." data-year="2024">
+          <div class="cert-card-img">
+            <img src="assets/certificates/workshop3.jpg" alt="Workshop 3" loading="lazy"
+              onerror="this.src='https://placehold.co/400x250/0f0f1a/f43f5e?text=Cybersecurity&font=syne'" />
+            <div class="cert-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="cert-card-body">
+            <span class="cert-badge">🔐 Security</span>
+            <h3>Cybersecurity Workshop</h3>
+            <p>Hands-on ethical hacking, penetration testing and secure coding practices.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SKILLS ════ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-bars">
+            <div class="skill-row"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
+            <div class="skill-row"><span class="skill-name">JavaScript</span><div class="skill-track"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-row"><span class="skill-name">C / C++</span><div class="skill-track"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-row"><span class="skill-name">Java</span><div class="skill-track"><div class="skill-fill" data-width="70"></div></div><span class="skill-pct">70%</span></div>
+            <div class="skill-row"><span class="skill-name">PHP</span><div class="skill-track"><div class="skill-fill" data-width="65"></div></div><span class="skill-pct">65%</span></div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-wrench"></i> Tools &amp; Frameworks</h3>
+          <div class="skill-cards-wrap">
+            <div class="skill-chip"><i class="fa-brands fa-react"></i> React</div>
+            <div class="skill-chip"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="16" /> MongoDB</div>
+            <div class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="16" /> MySQL</div>
+            <div class="skill-chip"><i class="fa-brands fa-docker"></i> Docker</div>
+            <div class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-chip"><i class="fa-brands fa-aws"></i> AWS</div>
+            <div class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" width="16" /> TensorFlow</div>
+            <div class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="16" /> Linux</div>
+            <div class="skill-chip"><i class="fa-brands fa-figma"></i> Figma</div>
+          </div>
+        </div>
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+          <div class="skill-cards-wrap">
+            <div class="skill-chip soft"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-users"></i> Teamwork</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-comments"></i> Communication</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-clock"></i> Time Management</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-magnifying-glass"></i> Critical Thinking</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-person-chalkboard"></i> Leadership</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-arrows-rotate"></i> Adaptability</div>
+            <div class="skill-chip soft"><i class="fa-solid fa-pen-nib"></i> Creative Writing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ PROJECTS ════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal-up" style="--delay:0.1s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project1.jpg" alt="AI Health Monitor" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/7c6fcd?text=AI+Health+Monitor&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>TensorFlow</span><span>React</span><span>FastAPI</span></div>
+            <h3>AI Health Monitor</h3>
+            <p>An intelligent health monitoring system leveraging ML models to predict health anomalies in real-time using wearable sensor data.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up" style="--delay:0.2s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project2.jpg" alt="Smart Campus" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/a78bfa?text=Smart+Campus&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Node.js</span><span>React</span><span>MongoDB</span><span>Socket.io</span></div>
+            <h3>Smart Campus System</h3>
+            <p>Full-stack campus management platform with real-time attendance tracking, resource booking and admin analytics dashboard.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up" style="--delay:0.3s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project3.jpg" alt="E-Commerce" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/34d399?text=E-Commerce&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span><span>Tailwind</span></div>
+            <h3>E-Commerce Platform</h3>
+            <p>Modern e-commerce solution with Stripe payments, inventory management, order tracking and a clean admin dashboard.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up" style="--delay:0.4s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project4.jpg" alt="NLP Chatbot" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/f59e0b?text=NLP+Chatbot&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>NLP</span><span>Flask</span><span>Vue.js</span></div>
+            <h3>NLP Chatbot Assistant</h3>
+            <p>Conversational AI assistant built with transformer models for natural language understanding and contextual dialogue management.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up" style="--delay:0.5s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project5.jpg" alt="Blockchain Voting" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/38bdf8?text=Blockchain+Voting&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Solidity</span><span>Ethereum</span><span>Web3.js</span><span>React</span></div>
+            <h3>Blockchain Voting System</h3>
+            <p>Decentralized, transparent and tamper-proof voting system built on Ethereum smart contracts with MetaMask integration.</p>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal-up" style="--delay:0.6s">
+          <div class="project-img-wrap">
+            <img src="assets/images/project6.jpg" alt="Weather App" loading="lazy"
+              onerror="this.src='https://placehold.co/600x340/0f0f1a/f43f5e?text=Weather+App&font=syne'" />
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>JavaScript</span><span>OpenWeather API</span><span>CSS3</span></div>
+            <h3>Real-time Weather App</h3>
+            <p>Beautiful weather application with 7-day forecasts, location detection, animated weather icons and air quality index data.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ RESEARCH ════ -->
+  <section id="research" class="section research-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Academic Work</span>
+        <h2 class="section-title">Research <span class="accent">Papers</span></h2>
+      </div>
+      <div class="research-list">
+
+        <div class="research-card glass reveal-up" style="--delay:0.1s">
+          <div class="research-meta">
+            <span class="research-status status-ongoing">Ongoing</span>
+            <span class="research-year">2024</span>
+          </div>
+          <h3 class="research-title">Deep Learning-Based Disease Prediction from EHR Data</h3>
+          <p class="research-desc">Investigating transformer-based architectures for predicting chronic disease onset from Electronic Health Records. The research focuses on interpretability and clinical validation of AI-assisted diagnostics.</p>
+          <div class="research-tags">
+            <span>Deep Learning</span><span>Healthcare AI</span><span>Transformers</span><span>EHR</span>
+          </div>
+          <a href="assets/research/research1.pdf" target="_blank" class="btn btn-sm btn-outline mt-1">
+            <i class="fa-solid fa-file-pdf"></i> View Paper
+          </a>
+        </div>
+
+        <div class="research-card glass reveal-up" style="--delay:0.2s">
+          <div class="research-meta">
+            <span class="research-status status-completed">Completed</span>
+            <span class="research-year">2023</span>
+          </div>
+          <h3 class="research-title">Federated Learning for Privacy-Preserving Data Analysis</h3>
+          <p class="research-desc">Explored federated learning frameworks that allow model training on distributed datasets without sharing raw data, achieving comparable accuracy while ensuring user privacy compliance with GDPR standards.</p>
+          <div class="research-tags">
+            <span>Federated Learning</span><span>Privacy</span><span>GDPR</span><span>ML</span>
+          </div>
+          <a href="assets/research/research2.pdf" target="_blank" class="btn btn-sm btn-outline mt-1">
+            <i class="fa-solid fa-file-pdf"></i> View Paper
+          </a>
+        </div>
+
+        <div class="research-card glass reveal-up" style="--delay:0.3s">
+          <div class="research-meta">
+            <span class="research-status status-completed">Completed</span>
+            <span class="research-year">2023</span>
+          </div>
+          <h3 class="research-title">Optimizing Smart Contract Gas Efficiency in Blockchain Networks</h3>
+          <p class="research-desc">Systematic analysis of gas optimization patterns in Ethereum smart contracts, proposing a new set of coding guidelines that reduce gas consumption by up to 35% without sacrificing security or functionality.</p>
+          <div class="research-tags">
+            <span>Blockchain</span><span>Smart Contracts</span><span>Ethereum</span><span>Optimization</span>
+          </div>
+          <a href="assets/research/research3.pdf" target="_blank" class="btn btn-sm btn-outline mt-1">
+            <i class="fa-solid fa-file-pdf"></i> View Paper
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">Have a project, collaboration, or just want to say hello? My inbox is always open. I'll get back to you as soon as possible!</p>
+          <div class="contact-social-links">
+            <a href="mailto:anidropaul4@gmail.com" class="contact-social gmail" aria-label="Gmail">
+              <i class="fa-brands fa-google"></i>
+              <span>Gmail</span>
+            </a>
+            <a href="https://linkedin.com/in/anidropaul" target="_blank" rel="noopener" class="contact-social linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://x.com/AnidroPaul24789" target="_blank" rel="noopener" class="contact-social twitter" aria-label="X Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+              <span>X (Twitter)</span>
+            </a>
+            <a href="https://www.facebook.com/share/1CkNLMcXvj/" target="_blank" rel="noopener" class="contact-social facebook" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/ani_dro04?igsh=aXExbnQwNGt0MnRk" target="_blank" rel="noopener" class="contact-social instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://github.com/anidrobot" target="_blank" rel="noopener" class="contact-social github" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" class="contact-form glass" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Designed &amp; Built with <span class="heart">♥</span> by <strong>Anidro Paul</strong></p>
+      <p class="footer-copy">© <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ════ MODAL ════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal glass">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="" id="modalImg" />
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <span id="modalYear" class="cert-year"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
